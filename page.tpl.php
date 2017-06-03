@@ -1,7 +1,7 @@
 <!-- HEADER -->
  <header>
     <div class="container">
-        <div class="logo"><a href="http://plauto.com.br" title="<?php print t('Home'); ?>"><img src="<?php print base_path() . path_to_theme() .'/' ?>img/plauto.png" class="img-responsive" /></a></div>
+        <div class="logo"><a href="http://plauto.com.br" title="<?php print t('Home'); ?>"><img src="<?php print base_path() . path_to_theme() .'/' ?>img/logo-plauto-2017.png" class="img-responsive" /></a></div>
 
         <div class="logo-democratas" ><img src="<?php print base_path() . path_to_theme() .'/' ?>/img/democratas.png" /></div>
         <ul class="links-sociais">
