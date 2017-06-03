@@ -1,0 +1,211 @@
+@azulpadrao: #263980;
+@azulsecundario: #9aa7af;
+@cinzapadrao: #2f383d;
+
+
+/*--- DESTAQUE HOME --------------------------------------------------------------------------------------*/
+.front #principal .destaque{
+    width: 100%;
+    float: left;
+    min-height: 500px;
+    background: transparent url(../img/bg_topo.jpg) top center no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 115px 0 0 0;
+
+    h2{
+        margin: 0;
+        font-size: 1.85em;
+
+        strong{font-size: 1.6em;}
+    }
+
+    h4{
+        font-size: 1.5em;
+        line-height: 1.2em;
+        font-weight: 300;
+        margin-bottom: 35px;
+        color: #fff;
+    }
+
+    .modal h4{color: @cinzapadrao;}
+
+    #contrateja{
+        .modal-body{padding-bottom: 75px}
+        
+        .form-submit{
+            width: 100%;
+            border-radius: 0;
+            text-transform: uppercase;
+        }
+    }
+}
+
+/*--- BEM VINDO ----------------------------------------------------------------------------------------------*/
+.front #bemvindo{
+    text-align: center;
+    background: #eff5f7;
+
+    .sobre{text-align: left;}
+
+    p{
+        color: @azulsecundario;
+        margin-bottom: 50px;
+    }
+}
+
+/*--- SERVICOS --------------------------------------------------------------------------------------------*/
+.front #servicos{
+    text-align: center;
+    padding-top: 120px;
+    border: 1px solid red;
+
+    .servico{
+        min-height: 270px;
+        padding: 0 35px;;
+        border: 1px solid #e7ecef;
+        border-bottom: 4px solid #e7ecef;
+        margin-bottom: 25px;
+        position: relative;
+
+        i{
+            display: inline-block;
+            width: 80px;
+            height: 92px;
+            background-image: url(../img/servicos.png);
+            background-repeat: no-repeat;
+            margin-top: -50px;
+        }
+
+        .saibamais{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0 0 -20px 0;
+        }
+
+
+        .botao{
+            margin: 0;
+            font-weight: normal;
+            color: #fff;
+            font-size: .85em;
+
+            &:hover{color: #fff !important;}
+        }
+    }
+    .manutencao i{background-position: 0 0;}
+        .manutencao:hover i{background-position: 0 -102px;}
+
+    .treinamentos i{background-position: -90px 0;}
+        .treinamentos:hover i{background-position: -90px -102px;}
+
+    .assistencia i{background-position: -180px 0;}
+        .assistencia:hover i{background-position: -180px -102px;}
+}
+
+/*--- ESPECIALISTAS -------------------------------------------------------------------------------------------*/
+.front #especialistas{
+    background: #eff5f7;
+    text-align: center;
+
+    h3{text-align: center;}
+
+    p{
+        color: @azulsecundario;
+        margin-bottom: 50px;
+    }
+
+    .pessoas{
+        text-align: left;
+
+        .foto{
+            border-top: 1px solid #e6eaec;
+            border-left: 1px solid #e6eaec;
+            border-right: 1px solid #e6eaec;
+        }
+
+        .info{
+            background: #fff;
+            border: 1px solid #e6eaec;
+            padding: 0 18px;
+            min-height: 180px;
+
+            .cargo{color: #6d7a83;}
+
+            p{margin-bottom: 10px;}
+        }
+    }
+}
+
+/*--- LABORATORIO -------------------------------------------------------------------------------------------*/
+
+.front #laboratorio{
+    text-align: center;
+
+    p{
+        color: @azulsecundario;
+        margin-bottom: 50px;
+    }
+
+    #slider-thumbs{margin-top: 15px;}
+
+}
+
+/*--- DEPOIMENTOS --------------------------------------------------------------------------------------------*/
+.front #depoimentos{
+    background: #3c3b3c url(../img/bg_depoimentos.jpg) top center no-repeat;
+    background-size: cover;
+    color: #fff;
+
+    h3{
+        text-align: right;
+        margin-bottom: 35px;
+    }
+
+    blockquote{font-style: italic;}
+
+    .autor{
+        padding: 0 25px 10px 25px;
+        font-style: italic;
+        background: @azulpadrao;
+        float: right;
+
+        p{margin: 0;}
+
+        .nome{font-size: 1.8em;}
+    }
+
+    #carousel-marcas{
+        float: left;
+        width: 100%;
+        padding: 50px;
+        background: transparent url(../img/overlay.png);
+
+        .marca{
+            float: left;
+            width: 33%;
+            text-align: center;
+        }
+    }
+
+
+}
+
+/*--- CONTATO ---------------------------------------------------------------------------------------------*/
+.front #contato {
+	padding: 100px 0;
+
+    h2{
+       font-size: 1.4em;
+       margin-bottom: 25px;
+    }
+    p{text-align: center;}
+
+    .form-submit{
+        width: 100%;
+        border-radius: 0;
+        text-transform: uppercase;
+    }
+}

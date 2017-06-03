@@ -1,0 +1,21 @@
+name = plauto
+description = Tema exclusivo para uso de Plauto Miro
+package = Core
+core = 7.x
+
+regions[header] = Header
+regions[sidebar] = Sidebar
+regions[menu] = Menu
+regions[content] = Content
+regions[footer] = Footer
+
+stylesheets[all][] = css/bootstrap.css
+stylesheets[all][] = css/bootstrap-theme.css
+stylesheets[all][] = css/geral.css
+
+plugins[panels][layouts] = layouts
+
+base theme = seven
+
+project = "drupal"
+datestamp = "1328134560"

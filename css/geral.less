@@ -1,0 +1,900 @@
+@azulpadrao: #0b2852;
+@azulsecundario: #1e96c8; 
+@cinzapadrao: #2f383d;
+@fontepadrao: 'Lato', sans-serif;
+
+html{height:100%;}
+
+body{
+    height: 100%;
+	padding: 0;
+    color: @cinzapadrao;
+    font-family: @fontepadrao;    
+}
+
+a{
+    outline: 0 !important;
+}
+
+.container{max-width: 1080px; padding: 0;}
+
+.img-responsive{
+    height: auto;
+    margin: auto;
+}
+
+section {
+	width: 100%;
+	min-width: 100%;    
+    float: left;	
+}
+
+#principal a{
+    color: @azulpadrao;
+    font-weight: bold;
+}
+#principal p{
+    font-size: 1em;
+}
+#principal .modal{color: @cinzapadrao;}
+#principal h1{
+	letter-spacing: -1px;
+    font-family: @fontepadrao;
+    font-weight: 700;
+    color: @azulpadrao;
+}
+
+#principal h2{
+	letter-spacing: -1px;
+	font-size: 2.85em;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+    font-family: @fontepadrao;
+    font-weight: 700;
+    color: @azulpadrao;
+}
+#principal h3{
+    font-size: 1.4em;
+    font-family: @fontepadrao;
+    font-weight: 700;
+    color: @azulpadrao;
+    padding: 7px 0 7px 42px;
+    text-transform: uppercase;
+    background: transparent url(../img/bg_header.png) left 5px no-repeat;
+}
+#principal p.chamada{color: #99abb7;}
+
+.modal-content{border-radius: 0;}
+
+
+/* formularios */
+form input[type="text"],
+form textarea,
+form select,
+form .form-email,
+form input[type="password"]{
+    width: 100%;
+	padding: 7px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	color: #111 !important;
+	border: 1px solid #d1d1d1;
+}
+form input[type="submit"]{
+	background: @azulpadrao;
+	font-weight: bold;
+	color: #fff;
+	border: none;
+	padding: 9px 18px;
+	float: left;
+	border-radius: 5px;
+}
+form input[type="submit"]:hover{
+	background: @cinzapadrao;
+}
+
+.botao{
+	color: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 5px 15px;
+	margin: 20px 20px 20px 0;
+    background: @azulpadrao;
+}
+.botao:hover{
+	background: @cinzapadrao;
+	color: #333 !important;
+	text-decoration: none;
+}
+
+.btn.btn-primary{
+    background: @azulpadrao;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-size: .85em;
+    margin-right: 20px;
+
+    &:hover{
+        background: @cinzapadrao;
+        color: #fff;
+    }
+}
+
+.btn.btn-secondary{
+    background: transparent;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-size: .85em;
+    margin-right: 20px;
+
+    &:hover{
+        background: @cinzapadrao;
+        color: #fff;
+    }
+}
+
+.extras .tabs{
+    margin: 0 0 10px 0;
+    width: 100%;
+    float: right;
+}
+
+
+/* carousel */
+a.carousel-control{
+    width: 60px;
+    height: 60px;
+    padding-top: 15px;
+    background: transparent url(../img/overlay.png) !important; 
+    color: #fff !important;    
+    top: 50%;
+    margin-top: -30px;
+    opacity: 1;
+}
+
+
+/*--- TOPO ---------------------------------------------------------------------------------------------*/
+header{
+	margin-bottom: 0;
+	position: relative;
+    .extra-info{
+        background: @azulpadrao;
+        color: #fff;
+        font-size: .85em;
+        padding: 10px 0;
+
+        span{
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        a{color: #fff;}
+    }
+
+    .logo{
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0;
+
+       /* a{
+            width: 525px;
+            height: 179px;
+            display: inline-block;
+            text-indent: -5000em;            
+            background: transparent url(../img/plauto.png) top center no-repeat;
+        }*/
+    }
+
+    .navbar-collapse{padding: 0;}
+
+    .navbar-default{
+        background: #0b2852;
+        border-radius: 0 !important;
+        margin-bottom: 0;
+
+        ul{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+             li{                
+                padding: 0 2.4%;
+
+                &:hover{background: @azulsecundario;}
+
+                 a{
+                    color: #fff !important;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+       
+    }
+    
+    .logo-democratas{
+        margin: 20px 0 0 7%;
+        float: left;
+    }
+
+    .search-form{        
+        float: right;
+        width: 470px;
+        margin: 15px 0 0 0;
+
+        .form-item{
+            width: 72%;
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
+        .custom-search-box{padding: 9px;}
+        #edit-submit{
+            width: 25%;
+            float: right;
+            margin: 0;
+        }
+    }
+
+    .links-sociais{
+        float: right;
+        list-style-type: none;
+        display: block;
+        width: 162px;
+        margin: 40px 0 0 0;
+
+        li{
+            display: inline-block;            
+            float: left;
+            margin-left: 4px;
+
+            a{
+                width: 35px;
+                height: 35px;
+                text-indent: -5000em;
+                float: left;                
+            }
+        }
+        li.facebook a{background: transparent url(../img/links_sociais.png) 0 0 no-repeat}
+            li.facebook:hover a{background: transparent url(../img/links_sociais.png) 0 -50px no-repeat}
+        li.twitter a{background: transparent url(../img/links_sociais.png) -40px 0 no-repeat}
+            li.twitter:hover a{background: transparent url(../img/links_sociais.png) -40px -50px no-repeat}
+        li.youtube a{background: transparent url(../img/links_sociais.png) -78px 0 no-repeat}
+            li.youtube:hover a{background: transparent url(../img/links_sociais.png) -78px -50px no-repeat}
+        li.email a{background: transparent url(../img/links_sociais.png) -117px 0 no-repeat}
+            li.email:hover a{background: transparent url(../img/links_sociais.png) -117px -50px no-repeat}
+    }
+}
+
+/* menu admin */
+.menu-admin{
+    width: 100%;
+    float: left;
+    padding: 25px 0;
+
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background: #f5f5f5;
+        border: 1px solid #ccc;
+
+        li{
+            display: inline-block;
+            padding: 10px 6px;
+            border-right: 1px solid #ccc;
+        }
+        li:last-child{border-right: none;}
+    }
+}
+
+
+/*--- TITULO PAGINAS ----------------------------------------------------------*/
+#page-title{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 2.6em;
+    padding-bottom: 12px;
+	background: transparent url(../img/bg_titulos.jpg) bottom center no-repeat;
+}
+
+/*--- PRINCIPAL -------------------------------------------------------------------*/
+#principal{
+	float: left;
+	width: 100%;
+	position: relative;	
+}
+#principal img.img-responsive{margin: auto;}
+
+ #conteudo p img[style="float: left;"]{margin: 0 15px 15px 0;}
+
+/* animacoes */
+.delay4{
+	animation-delay: .4s;
+	-moz-animation-delay: .4s;
+	-webkit-animation-delay: .4s;
+	-o-animation-delay: .4s;
+	transition-delay: .4s;
+	-webkit-transition-delay: .4s;
+	-moz-transition-delay: .4s;
+	-o-transition-delay: .4s;
+}
+.delay6{
+	animation-delay: .6s;
+	-moz-animation-delay: .6s;
+	-webkit-animation-delay: .6s;
+	-o-animation-delay: .6s;
+	transition-delay: .6s;
+	-webkit-transition-delay: .6s;
+	-moz-transition-delay: .6s;
+	-o-transition-delay: .6s;
+}
+.delay8{
+	animation-delay: .8s;
+	-moz-animation-delay: .8s;
+	-webkit-animation-delay: .8s;
+	-o-animation-delay: .8s;
+	transition-delay: .8s;
+	-webkit-transition-delay: .8s;
+	-moz-transition-delay: .8s;
+	-o-transition-delay: .8s;
+}
+.delay10{
+	animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	transition-delay: 1s;
+	-webkit-transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-o-transition-delay: 1s;
+}
+.delay12{
+	animation-delay: 1.2s;
+	-moz-animation-delay: 1.2s;
+	-webkit-animation-delay: 1.2s;
+	-o-animation-delay: 1.2s;
+	transition-delay: 1.2s;
+	-webkit-transition-delay: 1.2s;
+	-moz-transition-delay: 1.2s;
+	-o-transition-delay: 1.2s;
+}
+
+
+
+/*--- DESTAQUE HOME --------------------------------------------------------------------------------------*/
+section.destaque{
+    background: #f3f4f9 url(../img/bg_destaque.png) top center repeat-x;
+    padding: 25px 0;
+
+    #carousel-destaque{
+        position: relative;
+        .titulo-destaque{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            padding: 25px;
+            height: 100px;
+            background-image: url(../img/overlay2.png);
+
+            a{
+                color: #fff;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .view-destaque-home .views-row{
+        border-bottom: 1px solid #666;
+        padding: 0 0 25px 0;
+        margin-bottom: 25px;
+
+        .titulo-destaque{margin: 0 0 10px 0;}
+
+        .chamada{font-size: 13px;}
+    }
+}
+
+/*--- NOTICIAS / VIDEOS ---------------------------------------------------------------------------*/
+.noticias-videos{
+    
+
+    .views-row{min-height: 375px;}
+
+    .views-field-field-tags a{
+        font-size: 12px;
+        text-transform: uppercase;
+        color: @azulsecundario !important;
+    }
+
+    .views-field-title a{ 
+        font-size: 18px; 
+        line-height: 21px;
+    }
+
+    .views-field-field-chamada{ font-size: 13px; }
+
+    .view-videos-home{
+        .views-row{
+            min-height: 350px;
+        }
+        .views-field-title{margin-top: 20px;}
+    }
+}
+
+
+/*--- NOTICIAS DEMOCRATAS --------------------------------------------------------------------------*/
+.noticias-democratas{
+
+    .views-row{
+        min-height: 120px;
+
+        .assunto a{
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #8a8a8a !important;
+        }       
+
+        .col-sm-4, .col-sm-8{padding: 2px; margin: 0;}
+    }
+}
+
+/*--- GALERIA DE FOTOS - HOME ---------------------------------------------------------------------------*/
+.view-galerias-home .col-sm-3{margin-bottom: 25px;}
+
+
+/*--- PAGINA DE NOTICIAS / NOTICIAS POR ASSUNTO --------------------------------------------------------------------------*/
+.page-noticias,
+.page-taxonomy-term {    
+
+    #principal .container{max-width: 960px;}
+
+    h1.title{margin: 50px 0;}
+
+    .view-noticias-todas .views-row,
+    .view-noticias-categoria .views-row{
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #ccc;
+
+        .titulo a{ 
+            font-size: 18px; 
+            line-height: 21px;
+        }
+    }
+}
+
+/*--- PAGINA / NOTICIA INDIVIDUAL -----------------------------------------------------------------*/
+
+.node-type-article{
+    h1.title{margin-top: 50px;}
+
+    .view-topo-noticia .views-field-nothing{display: none;}
+
+    .pane-topo-noticia{
+        text-align: center;
+
+        .views-field-created{
+            color: #666;
+            width: 100%;        
+        }
+        .views-field-field-chamada{
+            font-size: 1.3em;
+            color: #999;
+            padding: 20px 0;
+            margin: 20px 0;
+            font-weight: bold;        
+            border-top: 2px solid #bbb;
+            border-bottom: 2px solid #bbb;
+        }
+
+    }
+
+    #principal .container{max-width: 960px;}
+
+}
+
+
+.node-type-article #conteudo p img[style="float: left;"]{margin: 0 15px 15px 0;}
+
+
+/*--- PAGINA INDIVIDUAL -----------------------------------------------------------------------*/
+
+.node-type-page{
+
+    #principal .container{max-width: 960px;}
+} 
+
+/*--- PAGINA DE VIDEOS --------------------------------------------------------------------------*/
+.page-videos {    
+
+    #principal .container{max-width: 960px;}
+
+    h1.title{margin: 50px 0;}
+
+    .views-row{       
+
+        .views-field-title{
+            margin: 15px 0;            
+
+            a{
+                font-size: 18px; 
+                line-height: 21px;
+
+            }           
+        }
+    }
+}
+
+/*--- PAGINA DE VIDEO INDIVIDUAL -----------------------------------------------------------*/
+
+.node-type-video {
+    h1.title{margin: 50px 0;}
+    .views-field-created,
+    .views-field-nothing{display: none;}
+}
+
+/*--- GALERIA DE IMAGENS / FOTOS -----------------------------------------------------------*/
+
+.page-fotos {
+
+    h1.title{margin: 50px 0;}
+
+    .view-fotos {
+
+        .views-row{
+             min-height: 320px;
+            img{
+                border: 1px solid #d2d2d2;
+                box-shadow: 2px 2px 2px #eee;
+                padding: 10px; 
+            }
+
+            .views-field-title{
+                margin-top: 15px;
+
+                a{font-weight: normal !important;}
+            }
+        }
+    }
+
+}
+
+/*--- PAGINA DE GALERIA INDIVIDUAL -----------------------------------------------------------*/
+
+.node-type-galeria-de-imagens {
+
+    h1.title{margin: 50px 0;}
+
+    .pane-node-body{margin: 50px 0;}
+
+    .view-galeria-individual{
+
+        .views-row{
+            margin-bottom: 25px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    }
+}
+
+
+/*--- RESULTADOS DA BUSCA e BUSCA 404 --------------------------------------------------------------*/
+.page-search h1.title{display: none;} 
+
+/*.page-search404 h1.title{
+    font-size: 18px; 
+    font-weight: bold;
+    background: #f5f5f5;
+    padding: 10px;
+}*/
+.page-search #principal h2,
+.page-search404 #principal h2{
+    text-align: center;
+    font-size: 2em;    
+    font-weight: bold;
+}
+.page-search #principal h3,
+.page-search404 #principal h3{
+    font-size: 21px;
+    line-height: 24px;
+    letter-spacing: -1px;       
+    font-weight: 300;
+    padding: 0;
+    background-image: none;
+    text-transform: none !important;
+}   
+.page-search #principal ol,
+.page-search404 #principal ol{
+    padding: 0;
+    margin: 0;
+}
+.page-search #principal ol li,
+.page-search404 #principal ol li{
+    border-bottom: 1px dotted #666;
+}
+
+
+/*--- RODAPE -------------------------------------------------------------------*/
+footer{
+    width: 100%;
+    margin-top: 100px;
+	float: left;
+    background: @azulpadrao;
+    color: #fff;
+    padding: 50px 0;
+
+    .copyright{text-align: right;}
+	
+}
+
+
+
+/*--- ADMIN ---------------------------------------------------------------------------------------*/
+
+
+/* criar conteudo */
+.page-node-add{
+    span.fieldset-legend{
+        margin-bottom: 100px;
+        display: inline-block;
+        font-size: 14px;
+    }
+}
+
+/* editar conteudo */
+.page-node-edit{
+    
+    .container{max-width: 1080px !important;}
+
+    h1.title em{
+        display: none;
+    }
+
+    label{font-weight: normal;}
+
+    span.fieldset-legend{
+        margin-bottom: 100px;
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    .field-type-field-collection {
+
+        .form-text{width: 95%;}
+
+        .field-label label{
+            font-weight: normal;        
+            margin-left: 5px;
+        }
+    }
+
+    .field-name-field-imagem{margin-bottom: 25px;}
+
+    .image-widget-data .form-type-textfield input{max-width: 300px;}
+
+    textarea{
+        padding: 7px;        
+    }
+
+    input[type="submit"]{
+        font-weight: normal;        
+    }
+
+    .vertical-tabs-list a strong{font-weight: normal;}
+}
+
+
+
+
+
+/* conteudo */
+.page-admin-content{
+    fieldset{        
+        float: left;
+        width: 100%;
+        display: block;
+        margin-bottom: 50px;
+
+        legend{
+            display: block;
+            margin-bottom: 50px;
+            display: inline-block;
+            font-size: 18px;
+        }
+    }
+    input[type="submit"]{
+        font-weight: normal;
+        margin-top: 15px;
+    }
+}
+
+/* webform */
+.page-node-webform-results{
+    .tabs,
+    .webform-results-per-page{display: none;}
+}
+
+.page-node-submission{
+    .tabs, 
+    .resend,
+    .webform-submission-navigation{display: none;}
+
+    fieldset{padding: 0;}
+}
+
+/* pessoas */
+.page-admin-people{
+
+    fieldset{        
+        float: left;
+        width: 100%;
+        display: block;
+        margin-bottom: 50px;
+
+        legend{
+            display: block;
+            margin-bottom: 50px;
+        }
+    }
+    input[type="submit"]{
+        font-weight: normal;
+        margin-top: 15px;
+    }
+
+}
+.page-admin-people-create{
+    #edit-locale, #edit-metatags{display: none;}
+}
+
+.page-user-edit{
+    .tabs,
+    #edit-locale,
+    #edit-picture,
+    #edit-timezone,
+    #edit-ckeditor,
+    #edit-metatags{display: none;}
+}
+
+
+/***************************************************************************************************/
+/*@media (max-width: 460px){
+    footer .ligue.desktop{display:none;}
+}
+@media (min-width: 461px){
+    footer .ligue.mobile{display:none;}
+}*/
+
+@media (max-width: 767px){
+    header {
+        .logo-democratas{display: none;}        
+        .search-form{        
+            float: right;
+            width: 100%;            
+            margin: 0 0 20px 0;
+
+            .form-item{
+                width: 72%;
+                float: left;
+                margin: 0;
+                padding: 0;
+            }
+            .custom-search-box{padding: 9px;}
+            #edit-submit{
+                width: 25%;
+                float: right;
+                margin: 0;
+            }
+        }
+        .links-sociais{            
+            width: 100%;
+            margin: 10px 0 0 0;            
+            text-align: center;
+            padding: 0 20%;
+
+            li{
+                display: inline-block; 
+                margin: 0 2%;
+            }
+          
+        }
+        .menu-secoes{text-align: center;}
+    }
+    #principal{
+        #carousel-destaque{margin-bottom: 25px;}
+        .noticias-videos .views-row{min-height: auto; margin-bottom: 25px;}
+        .noticias-democratas .views-row{min-height: auto; margin-bottom: 25px;}
+        .view-galerias-home .views-field-field-imagens{margin-bottom: 25px;}
+    }
+    footer{text-align: center;}
+
+    /* pagina de um conteudo */
+    .page-node{
+        h1.title{font-size: 21px;}
+        #principal{padding: 0 20px;}
+    } 
+
+    /* noticias */
+    .page-noticias{
+        #principal{padding: 0 20px;}
+    }
+
+    .node-type-article #principal .views-field-body img{
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* contato */
+    .fale-comigo #principal{padding: 20px;}
+}
+
+/*
+@media (min-width: 768px){
+
+    header{
+
+        #topnav{
+        	border: none;
+        	border-radius: 0;
+            background: #fff;
+            box-shadow: none;
+            margin-bottom: 0;
+            padding: 0;
+
+            .navbar-collapse{
+                float: right;
+                padding: 25px 0;
+                margin-bottom: 0;
+            }
+
+            #menu-secoes{
+            	float: none;
+            	border-top: none;
+                z-index: 1;
+            	border-radius: 0;
+
+                li{
+                	display: inline-block;
+                	float: none;
+                }
+
+                a{
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+
+                li.active a{background: #f5f5f5;}
+                a:hover,
+                li.active a:hover{background: #f5f5f5;}
+            }
+        }        
+    }
+    .front #bemvindo{
+        i{display: none;}        
+    }
+}
+@media (max-width: 1199px) {
+
+ }
+@media (min-width: 1200px) {
+
+ }
+*/
